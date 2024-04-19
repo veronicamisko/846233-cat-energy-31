@@ -6,7 +6,11 @@
   <title>Система питания "Кэт Энерджи"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer>
+  </script>
 </head>
 
 <body class="page__body">
@@ -14,8 +18,12 @@
     <nav class="main-header__navigation">
       <div class="main-header__bar">
         <a class="main-header__logo logo" href="index.html" aria-label="page">
-          <img class="logo__image" src="#" width="33" height="38" alt="Логотип магазина">
-          <img class="logo__name" src="#" width="101" height="18" alt="Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-large.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-medium.svg">
+            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
+          </picture>
+          <img class="logo__name" src="images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи">
         </a>
 
         <button class="main-header__toggle" type="button">
@@ -50,7 +58,11 @@
         <h1 class="promo__title">Функциональное
           питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="#" width="280" height="270" alt="Упаковка куриного корма Кэт Энерджи Про">
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-can-large@1x.png 1x, images/promo-can-large@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/promo-can-medium@1x.jpg 1x, images/promo-can-medium@2x.jpg 2x">
+          <img class="promo__image" src="images/promo-can-small@1x.png" srcset="images/promo-can-small@2x.png 2x" width="280" height="270" alt="Упаковка куриного корма Кэт Энерджи Про">
+        </picture>
         <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
     </header>
@@ -62,13 +74,13 @@
         <article class="catalog-sections__item">
           <h3 class="catalog-sections__title catalog-sections__title--slim">Похудение</h3>
           <p class="catalog-sections__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalog-sections__link" href="#">Kаталог slim</a>
+          <a class="catalog-sections__link" href="404.html">Kаталог slim</a>
         </article>
 
         <article class="catalog-sections__item">
           <h3 class="catalog-sections__title catalog-sections__title--pro">Набор массы</h3>
           <p class="catalog-sections__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalog-sections__link" href="#">Каталог pro</a>
+          <a class="catalog-sections__link" href="404.html">Каталог pro</a>
         </article>
       </div>
     </section>
@@ -114,11 +126,17 @@
         <div class="example__representation">
           <div class="example__images">
             <div class="example__image example__image--before">
-              <img src="#" width="280" height="256" alt="Толстый кот">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-cat-fat-medium@1x.png 1x, images/slider-cat-fat-medium@2x.png 2x">
+                <img src="images/slider/slider-cat-fat-small@1x.png" srcset="images/slider/slider-cat-fat-small@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
             </div>
 
             <div class="example__image example__image--after">
-              <img src="#" width="280" height="256" alt="Худой кот">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-cat-skinny-medium@1x.png 1x, images/slider-cat-skinny-medium@2x.png 2x">
+                <img src="images/slider/slider-cat-skinny-small@1x.png" srcset="images/slider/slider-cat-skinny-small@2x.png 2x" width="280" height="256" alt="Худой кот">
+              </picture>
             </div>
           </div>
 
@@ -137,7 +155,13 @@
           Санкт-Петербург</address>
       </div>
 
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-large@1x.jpg 1x, images/map-large@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-medium@1x.jpg 1x, images/map-medium@2x.jpg 2x">
+          <img class="contacts__image" src="images/map-small@1x.jpg" srcset="images/map-small@2x.jpg 2x" width="320" height="362" alt="Мы на карте">
+        </picture>
+      </div>
     </footer>
 
   </main>
@@ -145,25 +169,25 @@
   <footer class="page__footer main-footer">
     <div class="main-footer__container container">
 
-      <a class="main-footer__logo logo logo--footer" href="index.html">
-        <img class="logo__name" src="#" width="128" height="24" alt="Кэт Энерджи">
+      <a class="main-footer__logo logo logo--footer" href="index.html" aria-label="page">
+        <img class="logo__name" src="images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
 
       <ul class="main-footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link" href="#">
+          <a class="socials__link" href="404.html">
             <span class="visually-hidden">Вконтакте</span>
             <svg width="28" height="22"></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
+          <a class="socials__link" href="404.html">
             <span class="visually-hidden">YouTube</span>
             <svg width="28" height="22"></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
+          <a class="socials__link" href="404.html">
             <span class="visually-hidden">Telegram</span>
             <svg width="28" height="22"></svg>
           </a>
