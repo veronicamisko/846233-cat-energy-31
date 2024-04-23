@@ -9,4 +9,14 @@
   &::placeholder {
     color: $color-grey;
   }
+
+  &[type="email"] {
+    background-image: url("../../icons/stack.svg#email");
+    background-position: 50px center;
+  }
+
+  &[type="tel"] {
+    background-image: url("../../icons/stack.svg#phone");
+    background-position: 50px center;
+  }
 }

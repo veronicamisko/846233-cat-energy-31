@@ -11,3 +11,23 @@
   text-transform: uppercase;
   color: $color-dark-grey;
 }
+
+.card__title--more {
+  position: relative;
+
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -50px;
+    left: 80px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #d3d3d3;
+    mask-image: url("../../icons/stack.svg#plus");
+  }
+}

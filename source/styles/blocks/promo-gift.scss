@@ -4,4 +4,11 @@
   text-align: center;
   color: $color-white;
   background-color: $color-primary;
+  background-image: url("../../images/background/catalog-promo-bg-small@1x.jpg");
+}
+
+.promo-gift__text {
+  background-image: url("../../icons/stack.svg#gift");
+  background-position: center 100px;
+  background-repeat: no-repeat;
 }

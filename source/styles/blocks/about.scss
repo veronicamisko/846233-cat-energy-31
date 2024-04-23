@@ -1,0 +1,41 @@
+.about__item {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-primary;
+  }
+
+  &::after {
+    top: 12px;
+    left: 16px;
+
+    width: 30px;
+    height: 32px;
+  }
+}
+
+.about__item--healthy::after {
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+.about__item--powder::after {
+  background-image: url("../../icons/stack.svg#powder");
+}
+
+.about__item--meal::after {
+  background-image: url("../../icons/stack.svg#meal");
+}
+
+.about__item--weight::after {
+  background-image: url("../../icons/stack.svg#weight");
+}
+
