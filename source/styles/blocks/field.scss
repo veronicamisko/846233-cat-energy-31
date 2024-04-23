@@ -1,0 +1,12 @@
+.field__input {
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-grey;
+
+  &::placeholder {
+    color: $color-grey;
+  }
+}
