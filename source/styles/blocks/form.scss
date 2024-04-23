@@ -1,0 +1,15 @@
+.form {
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__note {
+  font-family: $font-basic;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: $color-black;
+}

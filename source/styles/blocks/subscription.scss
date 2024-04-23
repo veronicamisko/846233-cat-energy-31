@@ -1,0 +1,28 @@
+.subscription {
+  font-family: $font-title;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.subscription__title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.subscription__text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.subscription__input {
+  font-family: $font-title;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: $color-grey;
+
+  &::placeholder {
+    color: $color-grey;
+  }
+}

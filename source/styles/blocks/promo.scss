@@ -1,0 +1,18 @@
+.promo {
+  font-family: $font-title;
+  color: $color-white;
+
+  background-color: $color-primary;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.contacts {
+  background-color: $color-secondary;
+}
+
+.contacts__title {
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
+}
+
+.contacts--index {
+  background-color: $color-white;
+}

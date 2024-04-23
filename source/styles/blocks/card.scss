@@ -1,0 +1,13 @@
+.card {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__title {
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-dark-grey;
+}

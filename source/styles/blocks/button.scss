@@ -1,0 +1,14 @@
+.button {
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  background-color: $color-primary;
+}
+
+.button--accent {
+  color: $color-grey;
+  background-color: $color-secondary;
+}

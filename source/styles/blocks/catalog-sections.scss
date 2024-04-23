@@ -1,0 +1,21 @@
+.catalog-sections__item {
+  background-color: $color-secondary;
+}
+
+.catalog-sections__title {
+  font-family: $font-title;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.catalog-sections__link {
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-black;
+}
