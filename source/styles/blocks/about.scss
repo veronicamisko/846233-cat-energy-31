@@ -1,0 +1,30 @@
+.about__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-primary;
+  }
+}
+
+.about__item--healthy::before {
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+.about__item--powder::before {
+  background-image: url("../../icons/stack.svg#powder");
+}
+
+.about__item--meal::before {
+  background-image: url("../../icons/stack.svg#meal");
+}
+
+.about__item--weight::before {
+  background-image: url("../../icons/stack.svg#weight");
+}
+

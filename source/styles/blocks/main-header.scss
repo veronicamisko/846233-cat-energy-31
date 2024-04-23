@@ -1,0 +1,8 @@
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+
+  background-color: $color-black;
+  mask-image: url("../../icons/stack.svg#burger");
+  mask-size: contain;
+}
