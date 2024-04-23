@@ -1,0 +1,21 @@
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+
+  background-color: $color-light-gray;
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+}
+
+.socials__link--vk {
+  mask-image: url("../../icons/stack.svg#vk");
+}
+
+.socials__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+}
+
+.socials__link--tg {
+  mask-image: url("../../icons/stack.svg#tg");
+}
