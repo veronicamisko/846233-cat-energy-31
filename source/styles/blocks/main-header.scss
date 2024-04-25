@@ -1,3 +1,53 @@
+.main-header {
+  min-height: 60px;
+}
+
+.main-header__navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 25px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    padding-top: 55px;
+  }
+}
+
+.main-header__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.main-header__logo {
+  width: 190px;
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
 .main-header__toggle {
   width: 24px;
   height: 24px;
@@ -5,4 +55,8 @@
   background-color: $color-black;
   mask-image: url("../../icons/stack.svg#burger");
   mask-size: contain;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
