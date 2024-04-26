@@ -12,7 +12,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-left: auto;
 
     font-size: 18px;
