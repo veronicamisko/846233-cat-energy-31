@@ -1,8 +1,6 @@
 .main-header__navigation {
-  @media (max-width: $mobile-width) {
-    &:not(.main-header__navigation--large) {
-      border-bottom: 1px solid #e6e6e6;
-    }
+  &:not(.main-header__navigation--large) {
+    border-bottom: 1px solid $color-super-light-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -10,13 +8,13 @@
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: min-content 1fr;
     gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 54px 0;
+    padding: 55px 0;
   }
 }
 
@@ -28,14 +26,19 @@
 }
 
 .main-header__bar {
-  @media (max-width: $mobile-width) {
-    width: 320px;
-    margin: 0 auto;
-    padding: 12px 20px 13px;
-    display: grid;
-    grid-template-columns: 34px 1fr 34px;
-    gap: 16px;
-    align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 12px 20px 13px;
+  display: grid;
+  grid-template-columns: 34px 1fr 34px;
+  gap: 16px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    grid-template-columns: 60px 1fr;
+    gap: 0;
+    padding: 0;
   }
 }
 
@@ -45,10 +48,7 @@
 
 .main-header__list {
   margin: 0;
-
-  @media (max-width: $mobile-width) {
-    background-color: $color-white;
-  }
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     margin-right: -17px;

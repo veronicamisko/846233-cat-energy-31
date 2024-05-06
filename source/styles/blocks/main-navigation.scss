@@ -14,6 +14,7 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-left: auto;
+    padding-right: 17px;
 
     font-size: 18px;
     line-height: 24px;
@@ -30,10 +31,10 @@
   padding: 24px 0;
 
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-super-light-grey;
 
   &:first-child {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $color-super-light-grey;
   }
 
   @media (min-width: $tablet-width) {
