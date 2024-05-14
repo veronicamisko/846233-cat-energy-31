@@ -1,5 +1,27 @@
+.catalog-sections__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .catalog-sections__item {
+  padding: 20px;
+
   background-color: $color-secondary;
+
+  & + & {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
 }
 
 .catalog-sections__title {

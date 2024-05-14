@@ -1,3 +1,8 @@
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contacts {
   background-color: $color-secondary;
 }
@@ -7,7 +12,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-light-black;
 }
 
 .contacts__address {

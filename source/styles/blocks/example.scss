@@ -1,5 +1,19 @@
 .example {
+  padding: 20px;
+
   background-color: $color-secondary;
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.example__list {
+  text-align: center;
 }
 
 .example__title {
