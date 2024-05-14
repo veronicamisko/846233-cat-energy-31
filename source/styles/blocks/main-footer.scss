@@ -1,3 +1,13 @@
 .main-footer {
+  padding: 20px;
+
   background-color: $color-secondary;
+}
+
+.main-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    gap: 16px;
+  }
 }

@@ -1,8 +1,10 @@
 .logo {
-  display: grid;
-  grid-template-columns: 34px 1fr;
-  align-items: center;
-  gap: 16px;
+  @media (max-width: $mobile-width) {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 61px 1fr;
@@ -23,32 +25,5 @@
 }
 
 .logo__name {
-  width: 102px;
-  margin-top: 4px;
-  margin-right: 2px;
   justify-self: center;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 118px;
-  }
-}
-
-.logo__image {
-  width: 34px;
-
-  @media (min-width: $tablet-width) {
-    width: 61px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 71px;
-  }
-
-  .logo--footer & {
-    width: 128px;
-  }
 }

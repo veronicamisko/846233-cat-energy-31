@@ -1,9 +1,26 @@
 .promo {
+  padding: 20px;
+
   font-family: $font-title;
   color: $color-white;
   text-align: center;
 
   background-color: $color-primary;
+  background-image: url("../../images/background/promo-bg-small@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    background-color: transparent;
+
+    text-align: left;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
 }
 
 .promo__title {

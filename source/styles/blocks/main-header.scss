@@ -6,15 +6,13 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
-    padding: 24px 0;
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 174px 1fr;
     gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 55px 0;
   }
 }
 
@@ -26,19 +24,14 @@
 }
 
 .main-header__bar {
-  width: 320px;
-  margin: 0 auto;
-  padding: 12px 20px 13px;
-  display: grid;
-  grid-template-columns: 34px 1fr 34px;
-  gap: 16px;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-    grid-template-columns: 60px 1fr;
-    gap: 0;
-    padding: 0;
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 10px 20px 18px;
+    display: grid;
+    grid-template-columns: 34px 1fr 34px;
+    gap: 16px;
+    align-items: center;
   }
 }
 
@@ -48,25 +41,9 @@
 
 .main-header__list {
   margin: 0;
-  background-color: $color-white;
-
-  @media (min-width: $tablet-width) {
-    margin-right: -17px;
-  }
 }
 
 .main-header__toggle {
-  width: 30px;
-  height: 30px;
-  display: block;
-
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url("../../icons/stack.svg#burger");
-  border: none;
-
-
   @media (min-width: $tablet-width) {
     display: none;
   }
