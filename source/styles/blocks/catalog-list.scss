@@ -1,0 +1,16 @@
+.catalog-list {
+  padding: 20px 0;
+}
+
+.catalog-list__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px 80px;
+  }
+}
