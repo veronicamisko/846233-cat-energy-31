@@ -1,14 +1,37 @@
+.main__header {
+  padding: 28px 0 40px;
+}
+
 .main__title {
+  margin: 0;
   font-family: $font-title;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
 
   color: $color-black;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main__text {
+  margin: 0;
+
   font-family: $font-title;
   text-transform: uppercase;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

@@ -1,4 +1,7 @@
 .button {
+  padding: 11px 12px;
+  display: inline-block;
+
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
@@ -6,9 +9,47 @@
   color: $color-white;
 
   background-color: $color-primary;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $color-primary-2;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-primary-2;
+  }
+}
+
+.button--large {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .button--accent {
   color: $color-grey;
   background-color: $color-secondary;
+
+  &:hover {
+    background-color: $color-light-grey-special;
+  }
+
+  &:active {
+    color: rgba($color-grey, 0.3);
+    background-color: $color-light-grey-special;
+  }
+}
+
+.button--fixed {
+  font-size: 16px;
 }
