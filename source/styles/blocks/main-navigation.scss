@@ -9,7 +9,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    border-top: 1px solid $color-super-light-grey;
+    border-top: 1px solid $color-grey-3;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,11 +20,15 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .main-navigation__item {
   @media (max-width: $mobile-width) {
-    border-bottom: 1px solid $color-super-light-grey;
+    border-bottom: 1px solid $color-grey-3;
   }
 }
 
@@ -35,19 +39,28 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 4px;
-      right: 17px;
-      left: 17px;
+      bottom: 7px;
+      right: 18px;
+      left: 18px;
 
       height: 2px;
       border-bottom: 2px solid $color-primary;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: 9px;
+    }
+  }
 }
 
+
 .main-navigation--large .main-navigation__item--current {
-  &::after {
-    background-color: $color-white;
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $color-white;
+    }
   }
 }
 
@@ -59,10 +72,6 @@
 
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    padding: 17px;
-  }
-
   &:link:hover {
     opacity: 0.6;
   }
@@ -70,7 +79,16 @@
   &:link:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 21px 17px;
+  }
 }
+
 
 .main-navigation--large .main-navigation__link {
   @media (min-width: $desktop-width) {

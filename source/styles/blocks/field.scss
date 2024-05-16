@@ -4,10 +4,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  color: $color-grey;
+  color: $color-grey-6;
 
   &::placeholder {
-    color: $color-grey;
+    color: $color-grey-6;
   }
 
   &[type="email"] {

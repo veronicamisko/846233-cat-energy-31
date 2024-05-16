@@ -1,11 +1,14 @@
 .main-header__navigation {
-  &:not(.main-header__navigation--large) {
-    border-bottom: 1px solid $color-super-light-grey;
+  @media (max-width: $mobile-width) {
+    &:not(.main-header__navigation--large) {
+      border-bottom: 1px solid $color-grey-3;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
+    padding: 24px 0;
     display: grid;
     grid-template-columns: max-content 1fr;
     gap: 16px;
@@ -13,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding: 54px 0;
   }
 }
 
@@ -27,7 +31,7 @@
   @media (max-width: $mobile-width) {
     width: 320px;
     margin: 0 auto;
-    padding: 13px 20px 14px;
+    padding: 12px 20px 13px;
     display: grid;
     grid-template-columns: 34px 1fr 34px;
     gap: 16px;

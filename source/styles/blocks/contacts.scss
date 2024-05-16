@@ -1,25 +1,106 @@
-.contacts__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.contacts {
+  &:not(.contacts--index) {
+    background-color: $color-grey-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 0;
+
+    min-height: 400px;
+    padding: 40px 0 52px;
+    display: grid;
+    grid-template-columns: 1220px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+  }
 }
 
-.contacts {
-  background-color: $color-secondary;
+.contacts__container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 56px 40px 61px;
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 1;
+
+    grid-template-columns: 172px 155px;
+    width: 565px;
+    margin: 0;
+    padding: 56px 80px;
+
+    background-color: $color-white;
+  }
 }
 
 .contacts__title {
+  margin: 0;
+  padding-right: 10px;
+
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $color-light-black;
+  color: $color-grey-8;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .contacts__address {
+  margin: 0;
+
   font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
-.contacts--index {
-  background-color: $color-white;
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    inset: 0;
+  }
 }

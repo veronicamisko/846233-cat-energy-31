@@ -6,6 +6,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $color-white;
 
   background-color: $color-primary;
@@ -19,37 +20,50 @@
   }
 
   &:hover {
-    background-color: $color-primary-2;
+    background-color: $color-primary-1;
   }
 
   &:active {
     color: rgba($color-white, 0.3);
-    background-color: $color-primary-2;
+    background-color: $color-primary-1;
   }
 }
 
 .button--large {
   font-size: 16px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 20px;
   }
 }
 
+.button--promo {
+  @media (min-width: $tablet-width) {
+    padding: 17px 26px;
+  }
+}
+
 .button--accent {
-  color: $color-grey;
-  background-color: $color-secondary;
+  color: $color-grey-6;
+  background-color: $color-grey-1;
 
   &:hover {
-    background-color: $color-light-grey-special;
+    background-color: $color-grey-2;
   }
 
   &:active {
-    color: rgba($color-grey, 0.3);
-    background-color: $color-light-grey-special;
+    color: rgba($color-grey-6, 0.3);
+    background-color: $color-grey-2;
   }
 }
 
 .button--fixed {
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 12px;
+  }
 }

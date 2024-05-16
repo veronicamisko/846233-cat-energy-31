@@ -18,6 +18,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 33px;
+
     color: $color-black;
     background-color: transparent;
 
@@ -55,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 582px;
+    min-height: 491px;
     padding: 20px 610px 95px 80px;
   }
 }
@@ -105,7 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 30px;
+    top: -62px;
     left: calc(50% - 162px);
 
     width: 552px;

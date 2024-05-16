@@ -1,5 +1,20 @@
 .socials {
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.socials__item {
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
 }
 
 .socials__link {
@@ -7,7 +22,7 @@
   width: 28px;
   height: 22px;
 
-  background-color: $color-light-gray;
+  background-color: $color-grey-5;
   mask-repeat: no-repeat;
   mask-position: 50% 50%;
 }
