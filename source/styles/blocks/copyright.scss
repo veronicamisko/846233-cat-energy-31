@@ -20,5 +20,19 @@
     mask-image: url("../../icons/stack.svg#htmlacademy");
     background-color: $color-grey-6;
   }
-}
 
+  &:hover {
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+
+    &::after {
+      background-color: $color-primary;
+      opacity: 0.3;
+    }
+  }
+}

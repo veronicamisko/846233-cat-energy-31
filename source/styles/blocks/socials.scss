@@ -29,12 +29,42 @@
 
 .socials__link--vk {
   mask-image: url("../../icons/stack.svg#vk");
+  background-color: $color-grey-5;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    opacity: 0.3;
+  }
 }
 
 .socials__link--youtube {
   mask-image: url("../../icons/stack.svg#youtube");
+  background-color: $color-grey-5;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    opacity: 0.3;
+  }
 }
 
 .socials__link--tg {
   mask-image: url("../../icons/stack.svg#tg");
+  background-color: $color-grey-5;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    opacity: 0.3;
+  }
 }
