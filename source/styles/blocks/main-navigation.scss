@@ -60,6 +60,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       background-color: $color-white;
+      border-bottom: 2px solid $color-white;
     }
   }
 }

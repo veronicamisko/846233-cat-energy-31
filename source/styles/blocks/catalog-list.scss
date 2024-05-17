@@ -28,7 +28,7 @@
 }
 
 .catalog-list__item {
-  @media (min-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     position: relative;
 
     &::before {
