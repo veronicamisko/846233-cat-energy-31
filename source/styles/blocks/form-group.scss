@@ -1,17 +1,88 @@
+/* stylelint-disable max-nesting-depth */
 .form-group {
-  padding: 20px 0;
+  padding: 0;
+
   border: none;
 }
 
+.form-group--goal {
+  padding: 21px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+  }
+}
+
 .form-group__title {
+  margin-bottom: 35px;
+  padding: 0;
+  display: flex;
+  float: left;
+
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 2px;
+    margin-top: 16px;
+
+    background-color: $color-primary;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+
+    width: min-content;
+    margin-left: -22px;
+    padding: 0 22px;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      margin-top: 22px;
+    }
+
+    .form-group--extra & {
+      margin-bottom: 57px;
+    }
+
+    span {
+      width: auto;
+      margin-left: -42px;
+      padding: 0 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.form-group__field {
+  clear: both;
+  width: 100%;
 }
 
 .form-group__list {
+  margin: 0;
   padding: 0;
+  clear: both;
 
   list-style: none;
 }
@@ -28,12 +99,41 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    gap: 32px 60px;
   }
 
-  .form-group__list--contacts {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.form-group__item {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+
+      .form-group__list--extra & {
+        margin-top: 0;
+      }
+
+      .form-group__list--goal & {
+        margin-top: 13px;
+      }
+    }
+
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
+      .form-group__list--contacts & {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    .form-group__list--extra & + & {
+      margin-top: 12px;
     }
   }
 }
