@@ -1,18 +1,30 @@
 .logo {
-  @media (max-width: $mobile-width) {
+  &:not(.logo--footer) {
     display: grid;
     grid-template-columns: 34px 1fr;
     align-items: center;
     gap: 16px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 61px 1fr;
+      gap: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 71px 1fr;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 61px 1fr;
-    gap: 11px;
+  &:link:hover {
+    opacity: 0.8;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 71px 1fr;
+  &:link:active {
+    opacity: 0.6;
+  }
+
+  img {
+    display: block;
   }
 }
 
@@ -20,10 +32,39 @@
   display: flex;
   align-items: center;
 
-  justify-content: center;
-  padding: 8px;
+  @media (max-width: $mobile-width) {
+    padding: 8px;
+    justify-content: center;
+  }
 }
 
 .logo__name {
+  width: 102px;
+  margin-top: 4px;
+  margin-right: 2px;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
+}
+
+.logo__image {
+  width: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71px;
+  }
+
+  .logo--footer & {
+    width: 128px;
+  }
 }

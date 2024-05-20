@@ -5,7 +5,7 @@
 
   font-size: 16px;
   line-height: 20px;
-  color: $color-grey;
+  color: $color-grey-6;
 
   &::after {
     content: "";
@@ -18,7 +18,21 @@
     height: 34px;
 
     mask-image: url("../../icons/stack.svg#htmlacademy");
-    background-color: $color-grey;
+    background-color: $color-grey-6;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+
+    &::after {
+      background-color: $color-primary;
+      opacity: 0.3;
+    }
   }
 }
-

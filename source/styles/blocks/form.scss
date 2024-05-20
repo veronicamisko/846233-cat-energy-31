@@ -1,23 +1,64 @@
 .form {
-  padding: 20px;
+  overflow: hidden;
 
   font-family: $font-title;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
+  }
 }
 
 .form__container {
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .form__set {
   margin: 0;
+
+  & + & {
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 71px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &.form__set--goal {
+        margin-top: 0;
+        border: 1px solid $color-grey-11;
+      }
+    }
+  }
+}
+
+.form__set + .form__group--extra {
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
 }
 
 .form__set--contacts,
@@ -28,13 +69,53 @@
   }
 }
 
+.form__set--goal {
+  margin-right: -21px;
+  margin-left: -21px;
+
+  border: $color-grey-9;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .form__end {
+  margin-top: 34px;
+  padding-bottom: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    padding-bottom: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    text-align: left;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 59px;
+    padding-bottom: 82px;
+    gap: 80px;
     grid-column: 1 / -1;
   }
 }
 
+.form__button {
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 21px;
+  }
+}
+
 .form__note {
+  margin: 0;
+
   font-family: $font-basic;
   font-size: 14px;
   line-height: 16px;
