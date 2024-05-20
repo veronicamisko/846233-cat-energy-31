@@ -47,6 +47,7 @@
     @media (min-width: $desktop-width) {
       &.form__set--goal {
         margin-top: 0;
+        border: 1px solid $color-grey-11;
       }
     }
   }

@@ -118,12 +118,14 @@
               <label class="field" for="email">
                 <span class="field__title">E-mail:*</span>
                 <input class="field__input" name="email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                <span class="field__icon field__icon--email"></span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="field" for="tel">
                 <span class="field__title">Телефон:*</span>
-                <input class="field__input" name="tel" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="field__input" name="tel" type="tel" id="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required>
+                <span class="field__icon field__icon--tel"></span>
               </label>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 .promo {
-  padding: 27px;
+  padding: 27px 20px;
 
   font-family: $font-title;
   text-align: center;
@@ -42,7 +42,7 @@
 
       /* stylelint-disable-next-line max-nesting-depth */
       @media (min-resolution: 2dppx) {
-        background-size: auto 696px;
+        background-size: auto 723px;
         background-image: url("../../images/background/promo-bg-large@2x.jpg");
       }
     }
