@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 56px 40px 61px;
+    padding: 58px 40px 61px;
     grid-template-columns: 172px 172px;
     justify-content: space-between;
   }
@@ -81,6 +81,8 @@
     justify-content: space-between;
 
     text-align: right;
+
+    line-height: 27px;
   }
 
   @media (min-width: $desktop-width) {

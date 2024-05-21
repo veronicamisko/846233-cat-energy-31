@@ -41,7 +41,7 @@
     margin-top: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 71px;
+      margin-top: 67px;
     }
 
     @media (min-width: $desktop-width) {
@@ -88,7 +88,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
-    padding-bottom: 72px;
+    padding-bottom: 57px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -122,4 +122,8 @@
   line-height: 16px;
   text-transform: none;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

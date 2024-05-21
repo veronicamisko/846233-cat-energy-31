@@ -9,11 +9,11 @@
   background-size: 30px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 161px 38px 38px;
+    padding: 153px 38px 38px;
     display: flex;
     flex-direction: column;
 
-    background-position: 50% 50px;
+    background-position: 50% 44px;
     background-image: url("../../icons/stack.svg#plus");
     background-size: 60px 60px;
     border: 2px solid $color-grey-1;

@@ -17,8 +17,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
-    padding-bottom: 76px;
+    padding-top: 73px;
+    padding-bottom: 11px;
 
     &::before {
       top: 88px;
@@ -61,10 +61,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-bottom: 79px;
-    padding: 0 36px;
+    padding: 0 40px;
 
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +82,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 75px;
 
     border: 1px solid $color-grey-4;
   }

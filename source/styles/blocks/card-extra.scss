@@ -4,10 +4,10 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 38px 28px;
+    padding: 28px 38px 23px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 27px 16px;
+    gap: 26px 16px;
   }
 
   @media (min-width: $desktop-width) {

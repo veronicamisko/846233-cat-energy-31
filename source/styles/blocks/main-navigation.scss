@@ -48,7 +48,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &::after {
       bottom: 9px;
     }
@@ -82,7 +82,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 21px 18px;
+    padding: 16px 18px;
   }
 
   @media (min-width: $desktop-width) {
