@@ -83,7 +83,7 @@
 
 .form__end {
   margin-top: 34px;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -110,6 +110,7 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 21px;
+    padding: 12px;
   }
 }
 

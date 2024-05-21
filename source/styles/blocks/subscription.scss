@@ -11,7 +11,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 41px;
+    top: 36px;
     right: 0;
     left: 0;
     z-index: -1;
@@ -40,7 +40,7 @@
 }
 
 .subscription__title {
-  margin: 0 100px 36px -20px;
+  margin: 0 89px 34px -20px;
   padding: 0 20px;
   justify-self: start;
 
@@ -67,7 +67,7 @@
 
 .subscription__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-size: 16px;
   text-align: center;
@@ -96,6 +96,7 @@
 
 .subscription__input {
   padding: 11px;
+  padding-top: 13px;
   width: 100%;
 
   font-family: $font-title;
@@ -114,4 +115,7 @@
 
 .subscription__button {
   display: block;
+
+  font-size: 20px;
+  line-height: 26px;
 }

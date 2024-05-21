@@ -31,7 +31,7 @@
   @media (max-width: $mobile-width) {
     width: 320px;
     margin: 0 auto;
-    padding: 12px 20px 13px;
+    padding: 13px 20px;
     display: grid;
     grid-template-columns: 34px 1fr 34px;
     gap: 16px;
@@ -69,8 +69,8 @@
 }
 
 .main-header__toggle {
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 25px;
   display: none;
 
   background-color: transparent;

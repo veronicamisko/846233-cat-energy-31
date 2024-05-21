@@ -1,19 +1,19 @@
 .promo {
-  padding: 27px 20px;
+  padding: 23px 20px;
 
   font-family: $font-title;
   text-align: center;
 
   @media (max-width: $mobile-width) {
     color: $color-white;
-    background-color: $color-primary;
+    background-color: $color-primary-2;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("../../images/background/promo-bg-small@1x.jpg"), linear-gradient($color-primary 0, $color-primary 302px, $color-white 302px);
+    background-image: url("../../images/background/promo-bg-small@1x.jpg"), linear-gradient($color-primary-2 0, $color-primary-2 302px, $color-white 302px);
 
     @media (min-resolution: 2dppx) {
       background-size: auto 302px, auto;
-      background-image: url("../../images/background/promo-bg-small@2x.jpg"), linear-gradient($color-primary 0, $color-primary 302px, $color-white 302px);
+      background-image: url("../../images/background/promo-bg-small@2x.jpg"), linear-gradient($color-primary-2 0, $color-primary-2 302px, $color-white 302px);
     }
   }
 
@@ -35,7 +35,7 @@
       inset: -200px 0 0 50%;
       z-index: -2;
 
-      background-color: $color-primary;
+      background-color: $color-primary-2;
       background-position: 0 100%;
       background-repeat: no-repeat;
       background-image: url("../../images/background/promo-bg-large@1x.jpg");
@@ -63,8 +63,7 @@
 }
 
 .promo__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 4px 0 25px;
 
   font-size: 36px;
   line-height: 36px;

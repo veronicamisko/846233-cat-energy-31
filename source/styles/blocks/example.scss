@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 0 43px;
+  padding: 24px 0 38px;
 
   background-color: $color-grey-10;
 
@@ -29,7 +29,7 @@
 }
 
 .example__content {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -183,7 +183,7 @@
 }
 
 .example__image {
-  margin-bottom: 15px;
+  margin-bottom: -6px;
 
   @media (min-width: $tablet-width) {
     display: block;
