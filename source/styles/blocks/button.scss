@@ -1,0 +1,69 @@
+.button {
+  padding: 10px 12px;
+  display: inline-block;
+
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+
+  background-color: $color-primary;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $color-primary-1;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-primary-1;
+  }
+}
+
+.button--large {
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.button--promo {
+  @media (min-width: $tablet-width) {
+    padding: 17px 26px;
+  }
+}
+
+.button--accent {
+  color: $color-grey-6;
+  background-color: $color-grey-1;
+
+  &:hover {
+    background-color: $color-grey-2;
+  }
+
+  &:active {
+    color: rgba($color-grey-6, 0.3);
+    background-color: $color-grey-2;
+  }
+}
+
+.button--fixed {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 12px;
+  }
+}

@@ -1,0 +1,63 @@
+.promo-gift {
+  padding: 163px 56px 43px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-white;
+
+  background-color: $color-primary;
+  background-repeat: no-repeat;
+  background-size: 80px 80px, cover;
+  background-position: 50% 58px, 50% 50%;
+  background-image:
+    url("../../icons/stack.svg#gift"),
+    url("../../images/background/catalog-promo-bg-small@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../icons/stack.svg#gift"),
+      url("../../images/background/catalog-promo-bg-small@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 120px 71px 422px;
+    background-position: 77px 50%, 50% 50%;
+    background-image:
+      url("../../icons/stack.svg#gift"),
+      url("../../images/background/catalog-promo-bg-medium@1x.jpg");
+
+    text-align: left;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../icons/stack.svg#gift"),
+        url("../../images/background/catalog-promo-bg-medium@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 186px 40px 42px;
+    background-position: 50% 58px, 50% 50%;
+    background-image:
+      url("../../icons/stack.svg#gift"),
+      url("../../images/background/catalog-promo-bg-large@1x.jpg");
+
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../icons/stack.svg#gift"),
+        url("../../images/background/catalog-promo-bg-large@2x.jpg");
+    }
+  }
+}
+
+.promo-gift__text {
+  margin: 0;
+  padding-top: 23px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}

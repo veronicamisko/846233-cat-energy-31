@@ -1,0 +1,245 @@
+.catalog-sections {
+  padding-top: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
+.catalog-sections__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.catalog-sections__item {
+  position: relative;
+
+  padding: 22px 20px 18px;
+
+  background-color: $color-grey-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 316px 60px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 62px;
+  }
+
+  & + & {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.catalog-sections__title {
+  position: relative;
+
+  min-height: 50px;
+  margin: 0;
+  margin-bottom: 22px;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+
+  font-family: $font-title;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    margin-bottom: 18px;
+    padding-left: 0;
+
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    min-height: 100px;
+    margin-bottom: 39px;
+    padding-left: 162px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $color-primary;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 95px);
+      right: 62px;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: calc(50% - 50px);
+      right: auto;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    background-size: contain;
+  }
+}
+
+.catalog-sections__title--slim {
+  &::after {
+    top: -3px;
+    left: 7px;
+
+    width: 36px;
+    height: 50px;
+
+    background-image: url("../../icons/stack.svg#cat-slim");
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 106px);
+      right: 92px;
+      left: auto;
+
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: calc(50% - 54px);
+      left: 15px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.catalog-sections__title--pro {
+  &::after {
+    top: 11px;
+    left: -7px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../../icons/stack.svg#cat-pro");
+
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 51px);
+      right: 28px;
+      left: auto;
+
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: calc(50% - 30px);
+      left: -19px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
+.catalog-sections__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid $color-grey-9;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding: 0;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog-sections__link {
+  display: grid;
+  grid-template-columns: max-content 32px;
+  align-items: center;
+  gap: 17px;
+
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    gap: 27px;
+    font-size: 20px;
+  }
+
+  &::after {
+    content: "";
+
+    width: 24px;
+    height: 12px;
+
+    mask-image: url("../../icons/stack.svg#arrow");
+    background-color: $color-black;
+    mask-repeat: no-repeat;
+    mask-position: 100% 50%;
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+    }
+  }
+}
+
