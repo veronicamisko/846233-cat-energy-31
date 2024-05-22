@@ -11,7 +11,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 41px;
+    top: 36px;
     right: 0;
     left: 0;
     z-index: -1;
@@ -25,22 +25,22 @@
     padding-bottom: 76px;
 
     &::before {
-      top: 88px;
+      top: 82px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
-    padding-bottom: 86px;
+    padding-bottom: 104px;
 
     &::before {
-      top: 97px;
+      top: 91px;
     }
   }
 }
 
 .subscription__title {
-  margin: 0 100px 36px -20px;
+  margin: 0 89px 34px -20px;
   padding: 0 20px;
   justify-self: start;
 
@@ -49,16 +49,16 @@
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    margin: 0 425px 36px -20px;
+    margin: 0 425px 67px 4px;
     padding: 0 36px;
 
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 900px 36px -20px;
-    padding: 0 36px;
+    margin: 0 926px 72px -40px;
+    padding: 0 40px;
 
     font-size: 40px;
     line-height: 40px;
@@ -67,13 +67,16 @@
 
 .subscription__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-size: 16px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 140px;
+    padding: 0 80px;
+
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -96,6 +99,7 @@
 
 .subscription__input {
   padding: 11px;
+  padding-top: 13px;
   width: 100%;
 
   font-family: $font-title;
@@ -114,4 +118,7 @@
 
 .subscription__button {
   display: block;
+
+  font-size: 20px;
+  line-height: 26px;
 }

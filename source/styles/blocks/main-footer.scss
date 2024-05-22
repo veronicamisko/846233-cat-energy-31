@@ -1,10 +1,14 @@
 .main-footer {
-  padding: 31px 0 25px;
+  padding: 28px 0 45px;
 
   background-color: $color-grey-1;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 50px;
+    padding: 63px 0 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0 71px;
   }
 }
 
@@ -18,22 +22,23 @@
 
 .main-footer__logo {
   @media (max-width: $mobile-width) {
-    margin-bottom: 24px;
+    margin-bottom: 13px;
   }
 }
 
 .main-footer__socials {
   margin: 0;
+  margin-bottom: -20px;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
 
     border-top: 1px solid $color-grey-9;
     border-bottom: 1px solid $color-grey-9;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -4px;
-    margin-right: 8px;
+    margin-top: -18px;
+    margin-right: -1px;
   }
 }

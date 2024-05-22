@@ -1,5 +1,5 @@
 .about {
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
@@ -109,21 +109,21 @@
 
 .about__item--healthy::before {
   background-image: url("../../icons/stack.svg#leaf");
-  background-size: 50%;
+  background-size: 41%;
 }
 
 .about__item--powder::before {
   background-image: url("../../icons/stack.svg#powder");
-  background-size: 50%;
+  background-size: 45%;
 }
 
 .about__item--meal::before {
   background-image: url("../../icons/stack.svg#meal");
-  background-size: 50%;
+  background-size: 44%;
 }
 
 .about__item--weight::before {
   background-image: url("../../icons/stack.svg#weight");
-  background-size: 50%;
+  background-size: 45%;
 }
 

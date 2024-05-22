@@ -33,7 +33,7 @@
     z-index: -1;
 
     height: 2px;
-    margin-top: 16px;
+    margin-top: 17px;
 
     background-color: $color-primary;
   }
@@ -42,8 +42,8 @@
     position: relative;
     z-index: 1;
 
-    width: min-content;
     margin-left: -22px;
+    margin-right: 73px;
     padding: 0 22px;
     background-color: $color-white;
   }
@@ -64,13 +64,13 @@
 
     span {
       width: auto;
-      margin-left: -42px;
+      margin-left: -43px;
       padding: 0 42px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 80px;
   }
 }
 
@@ -110,7 +110,7 @@
 
 .form-group__item {
   & + & {
-    margin-top: 14px;
+    margin-top: 15px;
 
     @media (min-width: $tablet-width) {
       margin-top: 20px;

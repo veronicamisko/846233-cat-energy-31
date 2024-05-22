@@ -6,7 +6,15 @@
   <title>Система питания "Кэт Энерджи"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="scripts/index.js" as="script">
+  <script src="scripts/index.js" defer>
+  </script>
 </head>
 
 <body class="page__body">
@@ -185,7 +193,7 @@
       <h2 class="visually-hidden">Контакты</h2>
 
       <div class="contacts__container">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
           Санкт-Петербург</address>
       </div>

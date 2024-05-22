@@ -1,12 +1,12 @@
 .main__header {
-  padding: 28px 0 40px;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 18px;
+    padding-top: 16px;
   }
 }
 
@@ -14,11 +14,25 @@
   @media (min-width: $tablet-width) {
     padding-right: 40px;
     padding-left: 40px;
+
+    & .main__text {
+      padding-right: 250px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
+
+    & .main__text {
+      padding-right: 838px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -62,6 +76,7 @@
 
 .main__text {
   margin: 0;
+  padding-right: 20px;
 
   font-family: $font-title;
   text-transform: uppercase;

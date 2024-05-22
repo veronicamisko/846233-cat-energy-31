@@ -39,9 +39,9 @@
 }
 
 .logo__name {
-  width: 102px;
-  margin-top: 4px;
-  margin-right: 2px;
+  width: 101px;
+  margin-top: -1px;
+  margin-right: 1px;
   justify-self: center;
 
   @media (min-width: $tablet-width) {
@@ -50,6 +50,10 @@
 
   @media (min-width: $desktop-width) {
     width: 118px;
+  }
+
+  .logo--footer & {
+    width: 128px;
   }
 }
 
@@ -62,9 +66,5 @@
 
   @media (min-width: $desktop-width) {
     width: 71px;
-  }
-
-  .logo--footer & {
-    width: 128px;
   }
 }

@@ -6,9 +6,13 @@
   <title>Система питания "Кэт Энерджи"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="styles/styles.min.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="scripts/index.min.js" as="script">
   <script src="scripts/index.js" defer>
   </script>
 </head>
@@ -59,6 +63,9 @@
           питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1300px)" type="image/webp" srcset="./images/promo-can-large@1x.webp 1x, ./images/promo-can-large@2x.webp 2x" width="280" height="270">
+          <source media="(min-width: 768px)" type="image/webp" srcset="./images/promo-can-medium@1x.webp 1x, ./images/promo-can-medium@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="./images/promo-can-small@1x.webp 1x, ./images/promo-can-small@2x.webp 2x" width="280" height="270">
           <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="./images/promo-can-large@1x.png 1x, ./images/promo-can-large@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="./images/promo-can-medium@1x.jpg 1x, ./images/promo-can-medium@2x.jpg 2x">
           <img class="promo__image" src="./images/promo-can-small@1x.png" srcset="./images/promo-can-small@2x.png 2x" width="280" height="270" alt="Упаковка куриного корма Кэт Энерджи Про">
@@ -74,13 +81,13 @@
         <article class="catalog-sections__item">
           <h3 class="catalog-sections__title catalog-sections__title--slim">Похудение</h3>
           <p class="catalog-sections__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalog-sections__link" href="404.html">Kаталог slim</a>
+          <a class="catalog-sections__link" href="catalog.html">Kаталог slim</a>
         </article>
 
         <article class="catalog-sections__item">
           <h3 class="catalog-sections__title catalog-sections__title--pro">Набор массы</h3>
           <p class="catalog-sections__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalog-sections__link" href="404.html">Каталог pro</a>
+          <a class="catalog-sections__link" href="catalog.html">Каталог pro</a>
         </article>
       </div>
     </section>
@@ -128,6 +135,8 @@
 
         <div class="example__image">
           <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="./images/slider/slider-tablet@1x.webp 1x, ./images/slider/slider-tablet@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="./images/slider/slider-mobile@1x.webp 1x, ./images/slider/slider-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/slider/slider-tablet@1x.png 1x, ./images/slider/slider-tablet@2x.png 2x">
             <img src="./images/slider/slider-mobile@1x.png" srcset="./images/slider/slider-mobile@2x.png 2x" width="280" height="256" alt="Сравнение котов">
           </picture>
@@ -140,7 +149,7 @@
       <h2 class="visually-hidden">Контакты</h2>
 
       <div class="contacts__container">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
           Санкт-Петербург</address>
       </div>
@@ -154,7 +163,7 @@
     <div class="main-footer__container container">
 
       <a class="main-footer__logo logo logo--footer" href="index.html" aria-label="page">
-        <img class="logo__name" src="images/logo-text.svg" width="101" height="18" alt="Кэт Энерджи">
+        <img class="logo__name" src="images/logo-text.svg" width="128" height="24" alt="Кэт Энерджи">
       </a>
 
       <ul class="main-footer__socials socials">

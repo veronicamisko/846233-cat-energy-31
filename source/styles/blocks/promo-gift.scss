@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 70px 120px 70px 422px;
+    padding: 47px 120px 71px 422px;
     background-position: 77px 50%, 50% 50%;
     background-image:
       url("../../icons/stack.svg#gift"),
@@ -55,4 +55,9 @@
 
 .promo-gift__text {
   margin: 0;
+  padding-top: 23px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
