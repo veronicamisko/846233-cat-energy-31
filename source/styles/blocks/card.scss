@@ -90,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: -12px;
   }
 }
 
@@ -109,6 +109,10 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 

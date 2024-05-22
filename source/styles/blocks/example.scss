@@ -64,7 +64,7 @@
     grid-column: 1 / -2;
     margin-top: 92px;
     margin-bottom: 70px;
-    padding-right: 30px;
+    padding-right: 36px;
   }
 }
 
@@ -193,5 +193,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-left: 30px;
   }
 }

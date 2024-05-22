@@ -1,10 +1,14 @@
 .main-footer {
-  padding: 28px 0 25px;
+  padding: 28px 0 45px;
 
   background-color: $color-grey-1;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 0 50px;
+    padding: 63px 0 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0 71px;
   }
 }
 

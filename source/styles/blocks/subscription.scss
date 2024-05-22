@@ -31,10 +31,10 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
-    padding-bottom: 86px;
+    padding-bottom: 104px;
 
     &::before {
-      top: 97px;
+      top: 91px;
     }
   }
 }
@@ -57,8 +57,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 900px 36px -20px;
-    padding: 0 36px;
+    margin: 0 926px 72px -40px;
+    padding: 0 40px;
 
     font-size: 40px;
     line-height: 40px;

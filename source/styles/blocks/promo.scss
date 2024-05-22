@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
+    padding-top: 8px;
 
     color: $color-black;
     background-color: transparent;
@@ -28,6 +28,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-top: 28px;
+    padding-bottom: 1px;
 
     &::after {
       content: "";
@@ -42,7 +44,7 @@
 
       /* stylelint-disable-next-line max-nesting-depth */
       @media (min-resolution: 2dppx) {
-        background-size: auto 723px;
+        background-size: auto 694px;
         background-image: url("../../images/background/promo-bg-large@2x.jpg");
       }
     }

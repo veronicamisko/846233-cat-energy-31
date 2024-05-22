@@ -56,4 +56,8 @@
 .promo-gift__text {
   margin: 0;
   padding-top: 23px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
