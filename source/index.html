@@ -132,14 +132,36 @@
             <span>15 000 РУБ.</span>
           </p>
         </div>
+        <div class="example__representation">
+          <div class="example__images">
+            <div class="example__image example__image--before">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./images/slider/slider-tablet-before@1x.webp 1x, ./images/slider/slider-tablet-before@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="./images/slider/slider-mobile-before@1x.webp 1x, ./images/slider/slider-mobile-before@2x.webp 2x" width="280" height="256">
 
-        <div class="example__image">
-          <picture>
-            <source media="(min-width: 768px)" type="image/webp" srcset="./images/slider/slider-tablet@1x.webp 1x, ./images/slider/slider-tablet@2x.webp 2x" width="560" height="512">
-            <source type="image/webp" srcset="./images/slider/slider-mobile@1x.webp 1x, ./images/slider/slider-mobile@2x.webp 2x" width="280" height="256">
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/slider/slider-tablet@1x.png 1x, ./images/slider/slider-tablet@2x.png 2x">
-            <img src="./images/slider/slider-mobile@1x.png" srcset="./images/slider/slider-mobile@2x.png 2x" width="280" height="256" alt="Сравнение котов">
-          </picture>
+                <source media="(min-width: 768px)" type="image/png" srcset="./images/slider/slider-tablet-before@1x.png 1x, ./images/slider/slider-tablet-before@2x.png 2x" width="560" height="512">
+                <img src="./images/slider/slider-mobile-before@1x.png" srcset="./images/slider/slider-mobile-before@2x.png 2x" width="280" height="256" alt="Толстый кот до употребления корма">
+              </picture>
+            </div>
+            <div class="example__image example__image--after">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./images/slider/slider-tablet-after@1x.webp 1x, ./images/slider/slider-tablet-after@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="./images/slider/slider-mobile-after@1x.webp 1x, ./images/slider/slider-mobile-after@2x.webp 2x" width="280" height="256">
+
+                <source media="(min-width: 768px)" type="image/png" srcset="./images/slider/slider-tablet-after@1x.png 1x, ./images/slider/slider-tablet-after@2x.png 2x" width="560" height="512">
+                <img src="./images/slider/slider-mobile-after@1x.png" srcset="./images/slider/slider-mobile-after@2x.png 2x" width="280" height="256" alt="Худой кот после употребления корма">
+              </picture>
+            </div>
+          </div>
+
+          <div class="example__toggler">
+            <label class="visually-hidden" for="range">
+              <input class="visually-hidden" type="range" name="range" id="range" value="50" min="0" max="100">
+            </label>
+            <button class="example__switcher" type="button">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
+          </div>
         </div>
       </div>
 

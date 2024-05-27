@@ -181,18 +181,168 @@
   }
 }
 
-.example__image {
-  margin-bottom: -6px;
+.example__images {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 21px 58px;
+    margin-bottom: 26px;
+    padding: 0 58px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-left: 30px;
+  }
+}
+
+.example__image {
+  position: relative;
+
+  display: flex;
+  overflow: hidden;
+
+  img {
+    margin-left: -14px;
+    max-width: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    img {
+      width: 594px;
+      height: 511px;
+    }
+  }
+}
+
+.example__image--before {
+  img {
+    margin-left: 0;
+  }
+}
+
+.example__image--after {
+  justify-content: end;
+}
+
+.example__toggler {
+  position: relative;
+}
+
+// .example__switcher {
+//   position: absolute;
+//   content: "";
+//   bottom: 20px;
+//   right: 120px;
+
+//   width: 40px;
+//   height: 256px;
+
+//   background-image: url("../../icons/stack.svg#slider-button");
+
+//   @media (min-width: $tablet-width) {
+//     bottom: 35px;
+//     right: 334px;
+
+//     height: 512px;
+
+//     background-image: url("../../icons/stack.svg#slider-button-tablet");
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     right: 275px;
+//   }
+// }
+
+.example__switcher {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  right: 138px;
+
+  padding: 0;
+
+  width: 4px;
+  height: 256px;
+
+  background-color: $color-grey-5;
+  border-radius: 2px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    bottom: 35px;
+    right: 352px;
+
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 293px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 43%;
+    left: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    transform: translate(-50%);
+    background-color: $color-white;
+    border: 2px solid $color-grey-5;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      top: 45%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 47%;
+    left: -10px;
+
+    width: 24px;
+    height: 18px;
+
+    background-color: $color-grey-5;
+
+    cursor: pointer;
+
+    mask-image: url("../../icons/stack.svg#slider-arrows");
+
+    @media (min-width: $tablet-width) {
+      top: 47%;
+    }
+  }
+
+  &:hover {
+    background-color: $color-primary;
+
+    &::before {
+      border-color: $color-primary;
+    }
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &:active {
+    background-color: $color-primary-1;
+
+    &::before {
+      border-color: $color-primary-1;
+    }
+
+    &::after {
+      background-color: $color-primary-1;
+    }
   }
 }
