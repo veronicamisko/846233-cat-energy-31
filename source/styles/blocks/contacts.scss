@@ -95,14 +95,23 @@
   width: 100%;
   height: 362px;
 
+  background-image: url("../../images/map-small@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   border: none;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+
+    background-image: url("../../images/map-medium@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     inset: 0;
+
+    background-image: url("../../images/map-large@1x.jpg");
   }
 }
